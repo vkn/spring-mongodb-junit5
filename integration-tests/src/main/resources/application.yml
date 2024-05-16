@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-mongodb-demo
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+  docker:
+    compose:
+      enabled: true
+      skip:
+        in-tests: false
