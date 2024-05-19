@@ -10,9 +10,9 @@
 
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>spring-mongodb-demo</artifactId>
+    <artifactId>spring-mongodb-integration-tests</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>integration tests</name>
+    <name>Integration Tests</name>
     <description>Spring Boot MongoDb Junit5 Integration Tests</description>
     <dependencies>
         <dependency>
@@ -28,11 +28,11 @@
             <artifactId>spring-mongodb-junit5</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-docker-compose</artifactId>
-                <optional>true</optional>
-            </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-docker-compose</artifactId>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

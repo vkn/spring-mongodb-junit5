@@ -1,10 +1,7 @@
 services:
   mongodb:
     image: mongo:latest
-    container_name: mongodb_container
-#    environment:
-#      MONGO_INITDB_ROOT_USERNAME: root
-#      MONGO_INITDB_ROOT_PASSWORD: example
+    container_name: io_github_vkn_spring_mongo_junit5
     ports:
       - "27017:27017"
     volumes:
