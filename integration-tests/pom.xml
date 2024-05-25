@@ -5,13 +5,13 @@
     <parent>
         <groupId>io.github.vkn</groupId>
         <artifactId>spring-mongodb-junit5-parent</artifactId>
-        <version>0.0.2</version>
+        <version>0.0.3-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
 
     </parent>
     <groupId>com.example</groupId>
     <artifactId>spring-mongodb-integration-tests</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>Integration Tests</name>
     <description>Spring Boot MongoDb Junit5 Integration Tests</description>
     <dependencies>
@@ -26,7 +26,7 @@
         <dependency>
             <groupId>io.github.vkn</groupId>
             <artifactId>spring-mongodb-junit5</artifactId>
-            <version>0.0.2</version>
+            <version>0.0.3-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
