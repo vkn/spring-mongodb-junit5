@@ -1,6 +1,5 @@
-package com.example.springmongodbdemo;
+package io.github.vkn.spring.mongodb.unit;
 
-import io.github.vkn.spring.mongodb.unit.MongoDbUnitCommandListener;
 import org.springframework.boot.autoconfigure.mongo.MongoClientSettingsBuilderCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
