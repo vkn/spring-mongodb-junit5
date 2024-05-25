@@ -12,7 +12,7 @@ Add the dependency in your pom.xml
 <dependency>
     <groupId>io.github.vkn</groupId>
     <artifactId>spring-mongodb-junit5</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <scope>test</scope>
 </dependency>
 ```
@@ -22,29 +22,6 @@ Add the dependency in your pom.xml
 To get started, annotate your test class with `@ExtendWith(MongoDbUnitExtension.class)` and a test method with 
 `@MongoDbQueryTest`. See `BookControllerTest` in integration-tests module and java docs of `@MongoDbQueryTest` 
 for more information. 
-
-Create `MongoDbUnitCommandListener`:
-```java
-import io.github.vkn.spring.mongodb.unit.MongoDbUnitCommandListener;
-import org.springframework.boot.autoconfigure.mongo.MongoClientSettingsBuilderCustomizer;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-public class MongoConfig {
-    @Bean
-    public MongoClientSettingsBuilderCustomizer customizeTest(MongoDbUnitCommandListener mongoDbUnitCommandListener) {
-        return client -> client.addCommandListener(mongoDbUnitCommandListener);
-    }
-
-    @Bean
-    public MongoDbUnitCommandListener  mongoDbUnitCommandListener() {
-        return new MongoDbUnitCommandListener();
-    }
-}
-
-
-```
 
 Example test:
 
